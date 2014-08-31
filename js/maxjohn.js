@@ -29,7 +29,7 @@
         portfolioitem = $("<div>", {class:"portfolio-item"});
         link = $("<a>", {href:"#"});
         image = $("<img>", {class:"img-responsive", src:"http://placekitten.com/600/600", alt:""});
-        recipetitle = $("<h3>");
+        recipetitle = $("<h4>");
         recipeauthor = $("<p>");
         textcontainer = $("<div>", {class:"gallery-text"});
 

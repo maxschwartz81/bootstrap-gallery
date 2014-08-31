@@ -14,33 +14,42 @@
 
 
 (function (){
-    var recipe, link, portfolioitem, image, recipetitle, recipeauthor, textcontainer; 
+    
+    var tileMaker, maxColumnCount, columnIndex;
+    maxColumnCount = 3;
 
-    recipe = $("<div>", {class:"col-md-4"});
-    portfolioitem = $("<div>", {class:"portfolio-item"});
-    link = $("<a>", {href:"#"});
-    image = $("<img>", {class:"img-responsive", src:"http://placehold.it/600x600", alt:""});
-    recipetitle = $("<h3>");
-    recipeauthor = $("<p>");
-    textcontainer = $("<div>", {class:"gallery-text"});
+    tileMaker = function () {
 
-    recipetitle.html("Recipe Title");
-    recipeauthor.html("by Max Schwartz");
+        var recipe, link, portfolioitem, image, recipetitle, recipeauthor, textcontainer; 
 
-    textcontainer.append(recipetitle);
-    textcontainer.append(recipeauthor); 
+        recipe = $("<div>", {class:"col-md-4"});
+        portfolioitem = $("<div>", {class:"portfolio-item"});
+        link = $("<a>", {href:"#"});
+        image = $("<img>", {class:"img-responsive", src:"http://placehold.it/600x600", alt:""});
+        recipetitle = $("<h3>");
+        recipeauthor = $("<p>");
+        textcontainer = $("<div>", {class:"gallery-text"});
 
-    // link.append(recipetitle);
-    // link.append(recipeauthor);
+        recipetitle.html("Recipe Title");
+        recipeauthor.html("by Max Schwartz");
 
-    portfolioitem.append(image);
-    portfolioitem.append(textcontainer);
+        textcontainer.append(recipetitle);
+        textcontainer.append(recipeauthor); 
 
-    link.append(portfolioitem);
+        portfolioitem.append(image);
+        portfolioitem.append(textcontainer);
 
-    recipe.append(link);
+        link.append(portfolioitem);
 
-    $("#dynarow").append(recipe);
+        recipe.append(link);
+
+        $("#dynarow").append(recipe);
+
+    };
+
+    for(columnIndex = 0; columnIndex < maxColumnCount; columnIndex++){
+        tileMaker();
+    };
 
 
 })();

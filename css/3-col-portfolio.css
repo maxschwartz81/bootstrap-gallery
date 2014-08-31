@@ -8,8 +8,19 @@ body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.gallery-text h3 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
 .portfolio-item {
     margin-bottom: 25px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.gallery-text {
+	padding: 10px;
 }
 
 footer {

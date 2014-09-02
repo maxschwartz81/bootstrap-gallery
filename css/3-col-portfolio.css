@@ -5,13 +5,40 @@
  */
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background: #f7f7f7;
 }
+
+/* Font Settings */
 
 * {
 	font-family: Lato, 'sans-serif';
 }
+
+a:hover{
+	text-decoration: none;
+}
+
+/* Header Image Wrapper */
+
+.header-wrapper {
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* Nav Wrapper */
+
+.nav-wrapper {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/* Recipe Gallery Panels */
+
+/* Recipe Title */
 
 .gallery-text h4{
 	margin: 0;
@@ -20,12 +47,16 @@ body {
 	font-weight: 400;
 }
 
+/* Recipe Author */
+
 .gallery-text p {
 
 	margin: 0px;
 	color: black;
 	font-weight: 300;
 }
+
+/*  Recipe Panel*/
 
 .portfolio-item {
     margin-bottom: 25px;
@@ -38,6 +69,8 @@ body {
     box-shadow: 0px 0px 5px #888888;
 }
 
+/* Recipe Text White Area under photo*/
+
 .gallery-text {
 	padding: 10px;
 	border: 1px solid #ccc;
@@ -47,15 +80,23 @@ body {
 
 }
 
+/* Recipe Image */
+
 .portfolio-item img{
 	border-radius: 5px 5px 0px 0px;
 }
+
+
+/* Footer Styling */
 
 footer {
     margin: 50px 0;
 }
 
-a:hover{
-	text-decoration: none;
+footer p{
+	font-weight: 300;
+	color: #ccc;
 }
+
+
 
